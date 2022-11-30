@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Юлия Пигулина](https://up.htmlacademy.ru/adaptive/27/user/1891505).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
