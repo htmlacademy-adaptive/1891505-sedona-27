@@ -1,0 +1,15 @@
+.advantages-intro {
+  text-align: center;
+}
+
+.advantages-intro__title {
+  @include bold-font-black;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages-intro__text {
+  @include normal-font-black;
+  font-size: 14px;
+  line-height: 21px;
+}

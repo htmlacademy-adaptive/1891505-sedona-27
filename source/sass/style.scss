@@ -1,1 +1,23 @@
-body { background: green; }
+@import "fonts";
+@import "variables";
+@import "visually-hidden";
+@import "./blocks/page";
+@import "./blocks/main-nav";
+@import "./blocks/site-list";
+@import "./blocks/main-hero";
+@import "./blocks/advantages";
+@import "./blocks/advantages-intro";
+@import "./blocks/search-hotel";
+@import "./blocks/map";
+@import "./blocks/page-footer";
+@import "./blocks/social";
+@import "./blocks/copyright.scss";
+@import "./blocks/hero";
+@import "./blocks/reviews";
+@import "./blocks/reviews-intro";
+@import "./blocks/form";
+@import "./blocks/gallery";
+@import "./blocks/gallery-intro";
+@import "./blocks/video-clip";
+@import "./blocks/button.scss";
+
