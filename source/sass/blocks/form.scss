@@ -1,0 +1,26 @@
+.form__fieldset {
+  border: none;
+}
+
+.form__title {
+  @include bold-font-black;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__label {
+  @include normal-font-black;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.form__button {
+  border: none;
+}
+
+.form__remark {
+  @include normal-font-black;
+  font-size: 12px;
+  line-height: 21px;
+  opacity: 0.6;
+}
