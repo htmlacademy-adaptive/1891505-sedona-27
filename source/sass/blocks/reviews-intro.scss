@@ -1,0 +1,13 @@
+.reviews-intro__title {
+  @include bold-font-black;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.reviews-intro__text {
+  @include normal-font-black;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}

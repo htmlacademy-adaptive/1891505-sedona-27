@@ -1,0 +1,8 @@
+.button {
+  @include bold-font-white;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: $blue-background-color;
+  text-decoration: none;
+  text-align: center;
+}

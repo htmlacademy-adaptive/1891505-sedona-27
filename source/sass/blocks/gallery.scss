@@ -1,0 +1,30 @@
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.gallery__title-foto {
+  @include bold-font-black;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.gallery__author-foto {
+  @include normal-font-black;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: none;
+}
+
+.gallery__like-button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.gallery__foto-like-number {
+  @include bold-font-black;
+  font-size: 14px;
+  line-height: 21px;
+}

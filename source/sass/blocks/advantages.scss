@@ -1,0 +1,30 @@
+.advantages {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.advantages__item--image {
+  color: $white-font-color;
+  background-color: $blue-background-color;
+}
+
+.advantages__item--text {
+  background-color: $gray-background-color;
+}
+
+.advantages__title {
+  @include bold-font-advantages;
+  margin: 0;
+}
+
+.advantages__number,
+.advantages__description {
+  @include normal-font-advantages;
+  margin: 0;
+}
