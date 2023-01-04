@@ -1,5 +1,15 @@
 .main-hero {
   display: block;
-  background: $gray-background-color  url("../img/back-mobile.jpg") no-repeat center;
-  padding: 85px 20px;
+  background: $gray-background-color  url("../img/main-back-mobile.jpg") no-repeat center;
+  padding: 85px 10px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/main-back-tablet.jpeg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/main-back-desktop.jpeg");
+  }
 }
+

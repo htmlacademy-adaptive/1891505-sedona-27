@@ -5,4 +5,10 @@
   padding: 0;
   background-color: #ffffff;
   text-transform: uppercase;
+  max-width: $desktop-width;
+  min-width: $mobile-width-only;
+}
+
+.page__body {
+  margin: 0;
 }

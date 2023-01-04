@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +38,8 @@
   <main class="main-container">
     <h1 class="visually-hidden">Городок Седона</h1>
     <div class="main-hero">
-      <img src="img/main-hero-text.svg" alt="Добро пожаловать в Седону" width="282" height="214">
+      <img class="main-hero__image" src="img/main-hero-text.svg" alt="Добро пожаловать в Седону" width="282"
+        height="214">
     </div>
     <section class="advantages">
       <header class="advantages__header advantages-intro">
@@ -46,10 +48,13 @@
       </header>
       <ol class="advantages__list">
         <li class="advantages__item advantages__item--image advantages-town">
-          <h3 class="advantages__title">Настоящий городок</h3>
-          <span class="advantages__number">- №1 -</span>
-          <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img class="advantages__image" src="img/advantages-sity@1x.jpg" alt="Фото города Седона">
+          <div class="advantages__wrapper advantages__wrapper--town">
+            <h3 class="advantages__title">Настоящий городок</h3>
+            <span class="advantages__number">- №1 -</span>
+            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img class="advantages__image" src="img/advantages-city-mobile.jpeg" alt="Фото города Седона">
+
           <ul class="advantages-town__list">
             <li class="advantages-town__item advantages-town__item--rent">
               <h3 class="advantages-town__title">Жилье</h3>
@@ -59,17 +64,19 @@
               <h3 class="advantages-town__title">Еда</h3>
               <p class="advantages-town__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantages-town__item advantages-town__item--food">
+            <li class="advantages-town__item advantages-town__item--gift">
               <h3 class="advantages-town__title">Сувениры</h3>
               <p class="advantages-town__description">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
         <li class="advantages__item advantages__item--image">
-          <img class="advantages__image" src="img/advantages-bridge@1x.jpg" alt="Фото моста дьявола.">
-          <h3 class="advantages__title">Там есть мост дьявола</h3>
-          <span class="advantages__number">- №2 -</span>
-          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно!</p>
+          <div class="advantages__wrapper advantages__wrapper--bridge">
+            <h3 class="advantages__title">Там есть мост дьявола</h3>
+            <span class="advantages__number">- №2 -</span>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно!</p>
+          </div>
+          <img class="advantages__image" src="img/advantages-bridge-mobile.jpeg" alt="Фото моста дьявола.">
         </li>
         <li class="advantages__item advantages__item--text">
           <h3 class="advantages__title">Небольшая площадь</h3>
