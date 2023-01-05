@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="form-body">
+<body class="page__body">
   <header class="main-header">
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
@@ -44,25 +44,27 @@
           вами достопримечательностях</p>
       </header>
       <form class="reviews__form form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="form__fieldset form__fieldset--user-name">
-          <legend class="form__title form__title--user-name">Представьтесь:</legend>
-          <label class="form__label form__label--name" for="form-name">Имя*:</label>
-          <input class="form__field form__field--name" type="text" id="form-name" placeholder="Пётр">
-          <label class="form__label form__label--surname" for="form-surname">Фамилия*:</label>
-          <input class="form__field form__field--surname" type="text" id="form-surname" placeholder="Пустота">
-          <label class="form__label form__label--middle-name" for="form-middle-name">Отчество*:</label>
-          <input class="form__field form__field--middle-name" type="text" id="form-middle-name"
-            placeholder="Викторович">
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--user-contacts">
-          <legend class="form__title form__title--user-contacts">Контактная информация:</legend>
-          <label class="form__label form__label--user-phone" for="form-user-phone">Контактный телефон*:</label>
-          <input class="form__field form__field--user-phone" type="tel" id="form-user-phone"
-            placeholder="Введите телефон">
-          <label class="form__label form__label--user-mail" for="form-user-mail">"Электронная почта"*:</label>
-          <input class="form__field form__field--user-mail" type="email" id="form-user-mail"
-            placeholder="Введите e-mail">
-        </fieldset>
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset form__fieldset--user-name">
+            <legend class="form__title form__title--user-name">Представьтесь:</legend>
+            <label class="form__label form__label--name" for="form-name">Имя*:</label>
+            <input class="form__field form__field--name" type="text" id="form-name" placeholder="Пётр">
+            <label class="form__label form__label--surname" for="form-surname">Фамилия*:</label>
+            <input class="form__field form__field--surname" type="text" id="form-surname" placeholder="Пустота">
+            <label class="form__label form__label--middle-name" for="form-middle-name">Отчество*:</label>
+            <input class="form__field form__field--middle-name" type="text" id="form-middle-name"
+              placeholder="Викторович">
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--user-contacts">
+            <legend class="form__title form__title--user-contacts">Контактная информация:</legend>
+            <label class="form__label form__label--user-phone" for="form-user-phone">Контактный телефон*:</label>
+            <input class="form__field form__field--user-phone" type="tel" id="form-user-phone"
+              placeholder="Введите телефон">
+            <label class="form__label form__label--user-mail" for="form-user-mail">"Электронная почта"*:</label>
+            <input class="form__field form__field--user-mail" type="email" id="form-user-mail"
+              placeholder="Введите e-mail">
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--impact">
           <legend class="form__title form__title--impact">Ваше общее впечатление:</legend>
           <input class="form__field form__field--impact" type="radio" name="impact" value="positive-impact"
