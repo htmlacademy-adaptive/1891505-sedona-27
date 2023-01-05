@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1891505-sedona-27/4/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru">HTML academy</a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle main-nav__toggle--open-menu" type="button"><span class="visually-hidden">Открыть
+          меню</span></button>
+    </nav>
+    <a class="main-logo">
+      <img class="main-logo__image" src="img/logo.svg" alt="Логотип города Седона" width="185" height="96">
+    </a>
+  </header>
+  <main class="main-container-catalog">
+    <h1 class="visually-hidden">Галерея</h1>
+    <div class="hero">
+      <img class="hero__image" src="img/hero-text.svg" alt="Седона." width="229" height="39">
+    </div>
+    <section class="gallery">
+      <div class="gallery__presentation gallery__presentation--foto gallery-intro">
+        <h2 class="gallery-intro__title">Фото и видео</h2>
+        <p class="gallery-intro__text">Не можете решиться на путешествие из-за курса? Фоторгафии помогут вам забыть о
+          политике и экономике.</p>
+      </div>
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <a class="gallery__link" href="#">
+            <img class="gallery__foto" src="img/photo-open-spaces-mobile.jpg" alt="Фото просторов Седоны." width="280"
+              height="280">
+          </a>
+          <h3 class="gallery__title-foto">Неродные просторы</h3>
+          <p class="gallery__author-foto">Автор фото: Борис</p>
+          <button class="gallery__like-button" type="button">
+            <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3"
+                d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+            </svg>
+            <span class="visually-hidden">Нравится</span>
+          </button>
+          <span class="gallery__foto-like-number">1350</span>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="#">
+            <img class="gallery__foto" src="img/photo-flora-mobile.jpg" alt="Фото растительности Седоны." width="280"
+              height="280">
+          </a>
+          <h3 class="gallery__title-foto">Местная растительность</h3>
+          <p class="gallery__author-foto">Автор фото: Сергей</p>
+          <button class="gallery__like-button" type="button">
+            <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3"
+                d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+            </svg>
+            <span class="visually-hidden">Нравится</span>
+          </button>
+          <span class="gallery__foto-like-number">143</span>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="#">
+            <img class="gallery__foto" src="img/photo-road-mobile.jpg" alt="Фото дороги на север." width="280"
+              height="280">
+          </a>
+          <h3 class="gallery__title-foto">Дорога на север</h3>
+          <p class="gallery__author-foto">Автор фото: Петр</p>
+          <button class="gallery__like-button" type="button">
+            <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3"
+                d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+            </svg>
+            <span class="visually-hidden">Нравится</span>
+          </button>
+          <span class="gallery__foto-like-number">96</span>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="#">
+            <img class="gallery__foto" src="img/photo-bridge-mobile.jpg" alt="Фото Моста Дьявола." width="280"
+              height="280">
+          </a>
+          <h3 class="gallery__title-foto">Мост Дьявола</h3>
+          <p class="gallery__author-foto">Автор фото: Антон</p>
+          <button class="gallery__like-button" type="button">
+            <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3"
+                d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+            </svg>
+            <span class="visually-hidden">Нравится</span>
+          </button>
+          <span class="gallery__foto-like-number">254</span>
+        </li>
+      </ul>
+      <div class="gallery__presentation gallery__presentation--video gallery-intro">
+        <h2 class="gallery-intro__title">Все еще сомневаетесь?</h2>
+        <p class="gallery-intro__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+        <div class="gallery__clip video-clip">
+          <img src="img/video-mobile.jpg" alt="">
+          <button class="video-clip__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="54" fill="none" viewBox="0 0 48 54">
+              <path fill="#fff" fill-opacity=".7" d="M48 27 0 54V0l48 27Z" />
+            </svg>
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__hashtag">#visitSEDONA</div>
+    <section class="page-footer__social social">
+      <h2 class="visually-hidden">Туристический городок Седона в социальных сетях</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+    </div>
+  </footer>
+</body>
+
+</html>
