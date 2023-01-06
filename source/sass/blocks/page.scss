@@ -12,7 +12,7 @@
 .page__body {
   margin: 0 auto;
   width: $mobile-width-only;
-  
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
   }
