@@ -5,17 +5,10 @@
   margin: 0 auto;
   padding: 0;
   text-align: initial;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
@@ -26,12 +19,7 @@
   background-color: $gray-background-color;
 
   @media (min-width: $tablet-width) {
-    width: 256px;
-    box-sizing: border-box;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 400px;
+    width: calc(100% / 3);
     box-sizing: border-box;
   }
 }
@@ -55,5 +43,5 @@
   line-height: 21px;
   color: $gray-font-color;
   margin: 0;
-  padding: 0 0 0 0;
+  padding: 0;
 }

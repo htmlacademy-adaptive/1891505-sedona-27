@@ -1,0 +1,12 @@
+.main-logo {
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.main-logo__image {
+  display: block;
+}

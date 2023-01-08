@@ -1,3 +1,18 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 120px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .gallery__list {
   margin: 0;
   padding: 0;
@@ -8,12 +23,12 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
