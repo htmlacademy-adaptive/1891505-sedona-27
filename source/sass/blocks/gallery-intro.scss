@@ -1,3 +1,7 @@
+.gallery-intro {
+  text-align: center;
+}
+
 .gallery-intro__title {
   @include bold-font-black;
   font-size: 18px;
@@ -10,4 +14,5 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+  padding: 26px 21px 36px 23px;
 }

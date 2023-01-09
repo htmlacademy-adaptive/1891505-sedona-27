@@ -2,11 +2,34 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: #81b3d2;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      margin-right: 155px;
+    }
+  }
 }
 
 .site-list__link {
-  @include bold-font-black;
+  @include bold-font-white;
   font-size: 14px;
   line-height: 21px;
   text-decoration: none;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    @include bold-font-black;
+    box-shadow: none;
+  }
 }

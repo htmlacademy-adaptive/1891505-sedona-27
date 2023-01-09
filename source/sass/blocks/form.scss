@@ -1,11 +1,40 @@
+.form {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .form__fieldset {
   border: none;
+  padding: 24px 0 40px 0;
+}
+
+.form__fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.form__fieldset--user-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset--user-contacts {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__title {
   @include bold-font-black;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
+  padding-top: 53px;
 }
 
 .form__label {

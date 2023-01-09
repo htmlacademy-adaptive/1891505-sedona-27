@@ -6,3 +6,25 @@
   background-color: #ffffff;
   text-transform: uppercase;
 }
+
+.page__body {
+  margin: 0;
+  min-width: 100%;
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.page__container {
+  min-width: $mobile-width-only;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    box-shadow: 0 4px 4px 0 rgba(#000000, 0.25);
+  }
+}

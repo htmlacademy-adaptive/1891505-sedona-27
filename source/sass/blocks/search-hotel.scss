@@ -1,11 +1,12 @@
 .search-hotel {
   padding: 33px 18px 49px 18px;
+  text-align: center;
 }
 
 .search-hotel__title {
   @include bold-font-black;
-  font-size: 30px;
-  line-height: 26px;
+  font-size: 21px;
+  line-height: 18px;
 }
 
 .search-hotel__description {
