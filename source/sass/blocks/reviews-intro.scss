@@ -8,6 +8,15 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 25px;
+  }
 }
 
 .reviews-intro__text {
@@ -15,5 +24,13 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  padding-top: 23px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+  }
 }
