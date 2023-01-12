@@ -16,16 +16,36 @@
   padding: 31px 22px 2px 66px;
   margin: 0;
   list-style-type: none;
-  background-color: $gray-background-color;
+  background-color: #ffffff;
+  background-position: 20px 40px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     width: calc(100% / 3);
     box-sizing: border-box;
+    background-position: 50% 20%;
+    background-size: 30%;
+    padding: 158px 33px 60px;
+    text-align: center;
   }
-}
 
-.advantages-town__item--gift {
-  padding-bottom: 46px;
+  @media (min-width: $desktop-width) {
+    padding: 170px 50px 67px;
+    background-size: 30%;
+  }
+
+  &--rent {
+    background-image: url("../img/icons/icon-house.svg");
+  }
+
+  &--food {
+    background-image: url("../img/icons/icon-burger.svg");
+  }
+
+  &--gift {
+    background-image: url("../img/icons/icon-gift.svg");
+    padding-bottom: 46px;
+  }
 }
 
 .advantages-town__title {

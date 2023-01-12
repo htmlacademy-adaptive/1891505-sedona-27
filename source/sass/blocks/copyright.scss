@@ -1,7 +1,33 @@
+.copyright {
+  display: block;
+}
+
 .copyright__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: #81b3d2;
+}
+
+.copyright__link:active .copyright__icon {
+  fill: #b3b3b3;
 }
