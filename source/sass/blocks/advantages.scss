@@ -36,6 +36,19 @@
       box-sizing: border-box;
     }
   }
+
+  &--image:first-child {
+    padding-top: 33px;
+    background-image: url("../img/icons/divider-top.svg");
+    background-repeat: no-repeat;
+    background-position: 50% -1px;
+    background-size: initial;
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+      padding-top: 0;
+    }
+  }
 }
 
 .advantages__title {
