@@ -3,4 +3,8 @@
   background: $gray-background-color  url("../img/hero-back.jpeg") no-repeat center;
   padding: 53px 20px 62px 20px;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-back@2x.jpeg");
+  }
 }
