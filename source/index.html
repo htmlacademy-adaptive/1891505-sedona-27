@@ -52,7 +52,14 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__wrapper-image">
-              <img class="advantages__image" src="img/advantages-city-mobile.jpeg" alt="Фото города Седона">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/advantages-city-desctop.jpeg 1x, /img/advantages-city-desctop@2x.jpeg 2x">
+                <source media="(min-width: 521px)"
+                  srcset="img/advantages-city-tablet.jpeg 1x, img/advantages-city-tablet@2x.jpeg 2x">
+                <img class="advantages__image" src="img/advantages-city-mobile.jpeg"
+                  srcset="img/advantages-city-mobile@2x.jpeg 2x" width="520" height="260" alt="Фото города Седона">
+              </picture>
             </div>
             <ul class="advantages-town__list">
               <li class="advantages-town__item advantages-town__item--rent">
@@ -76,7 +83,14 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно!</p>
             </div>
             <div class="advantages__wrapper-image">
-              <img class="advantages__image" src="img/advantages-bridge-mobile.jpeg" alt="Фото моста дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/advantages-bridge-desktop.jpeg 1x, img/advantages-bridge-desktop@2x.jpeg 2x">
+                <source media="(min-width: 521px)"
+                  srcset="img/advantages-bridge-tablet.jpeg 1x, img/advantages-bridge-tablet@2x.jpeg 2x">
+                <img class="advantages__image" src="img/advantages-bridge-mobile.jpeg"
+                  srcset="img/advantages-bridge-mobile@2x.jpeg 2x" width="520" height="260" alt="Фото моста дьявола.">
+              </picture>
             </div>
           </li>
           <li class="advantages__item advantages__item--text">
