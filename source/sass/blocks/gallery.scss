@@ -51,12 +51,32 @@
   padding-top: 8px;
 }
 
-.gallery__presentation--foto {
-  padding-top: 37px;
+.gallery__foto {
+  display: block;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
+  }
 }
 
-.gallery__presentation--video {
-  padding-top: 17px;
+.gallery__presentation {
+  &--foto {
+    padding-top: 37px;
+  }
+
+  &--video {
+    padding-top: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .gallery__author-foto {
