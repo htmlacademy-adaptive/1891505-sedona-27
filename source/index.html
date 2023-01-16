@@ -40,8 +40,11 @@
     <main class="main-container">
       <h1 class="visually-hidden">Городок Седона</h1>
       <div class="main-hero">
-        <img class="main-hero__image" src="img/main-hero-text.svg" alt="Добро пожаловать в Седону" width="282"
-          height="214">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/main-hero-text.svg">
+          <img class="main-hero__image" src="img/main-hero-text-mobile.svg" alt="Добро пожаловать в Седону" width="282"
+            height="214">
+        </picture>
       </div>
       <section class="advantages">
         <header class="advantages__header advantages-intro">
@@ -57,9 +60,12 @@
             </div>
             <div class="advantages__wrapper-image">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-city-desctop.webp 1x, img/advantages-city-desctop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 521px)" srcset="img/advantages-city-tablet.webp 1x, img/advantages-city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/advantages-city-mobile.webp 1x, img/advantages-city-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/advantages-city-desctop.webp 1x, img/advantages-city-desctop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 521px)"
+                  srcset="img/advantages-city-tablet.webp 1x, img/advantages-city-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/advantages-city-mobile.webp 1x, img/advantages-city-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/advantages-city-desctop.jpeg 1x, /img/advantages-city-desctop@2x.jpeg 2x">
                 <source media="(min-width: 521px)"
@@ -91,9 +97,12 @@
             </div>
             <div class="advantages__wrapper-image">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.webp 1x, img/advantages-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 521px)" srcset="img/advantages-bridge-tablet.webp 1x, img/advantages-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/advantages-bridge-mobile.webp 1x, img/advantages-bridge-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/advantages-bridge-desktop.webp 1x, img/advantages-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 521px)"
+                  srcset="img/advantages-bridge-tablet.webp 1x, img/advantages-bridge-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/advantages-bridge-mobile.webp 1x, img/advantages-bridge-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/advantages-bridge-desktop.jpeg 1x, img/advantages-bridge-desktop@2x.jpeg 2x">
                 <source media="(min-width: 521px)"

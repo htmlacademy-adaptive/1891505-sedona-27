@@ -39,7 +39,10 @@
     <main class="main-container-form">
       <h1 class="visually-hidden">Отзывы</h1>
       <div class="hero">
-        <img class="hero__image" src="img/hero-text.svg" alt="Седона." width="229" height="39">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/hero-text.svg">
+          <img class="hero__image" src="img/hero-text-mobile.svg" alt="Седона." width="229" height="39">
+        </picture>
       </div>
       <section class="reviews">
         <header class="reviews__header reviews-intro">
