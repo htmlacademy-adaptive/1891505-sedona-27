@@ -99,8 +99,12 @@
   }
 }
 
-.main-nav--opened .main-nav__list,
 .main-nav--nojs .main-nav__list {
+  position: static;
+  display: flex;
+}
+
+.main-nav--opened .main-nav__list {
   position: absolute;
   width: 100%;
   z-index: 10;
