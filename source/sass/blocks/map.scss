@@ -4,7 +4,23 @@
   overflow: hidden;
 }
 
+.map__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px;
+}
+
 .map__image {
   display: block;
   object-fit: cover;
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.map__iframe {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 10;
+  width: 100%;
 }
