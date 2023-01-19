@@ -72,7 +72,7 @@
   left: 12px;
   width: 22px;
   height: 16px;
-  background-image: url("../img/icons/tick.svg");
+  background-image: url("../img/tick.svg");
 }
 
 .control__field:hover + .control__mark,
@@ -80,7 +80,7 @@
   background-color: #e5e5e5;
 }
 
-.control__label:active .control__mark {
+.control__field:active + .control__mark {
   background-color: #d5d5d5;
 
   &::before {

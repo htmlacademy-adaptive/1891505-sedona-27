@@ -29,17 +29,32 @@
 
   &--text {
     background-color: $gray-background-color;
-    padding: 24px 31px 24px 43px;
+    padding: 24px 31px 26px 43px;
 
     @media (min-width: $tablet-width) {
       width: calc(100% / 3);
       box-sizing: border-box;
+      padding: 37px 20px 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 48px 35px 42px;
+    }
+  }
+
+  &--down {
+    @media (min-width: $tablet-width) {
+      padding: 49px 20px 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 60px 35px 42px;
     }
   }
 
   &--image:first-child {
     padding-top: 33px;
-    background-image: url("../img/icons/divider-top.svg");
+    background-image: url("../img/divider-top.svg");
     background-repeat: no-repeat;
     background-position: 50% -1px;
     background-size: initial;
@@ -51,10 +66,28 @@
   }
 }
 
+.advantages__item--reverse {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
 .advantages__title {
   @include bold-font-advantages;
   margin: 0;
   padding: 0 0 10px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages__title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .advantages__number,
@@ -64,7 +97,23 @@
 }
 
 .advantages__description {
-  padding: 17px 0 0 0;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+}
+
+.advantages__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .advantages__wrapper {
@@ -74,11 +123,27 @@
   }
 
   &--town {
-    padding: 77px 17px 50px 17px;
+    padding: 36px 17px 49px;
+
+    @media (min-width: $tablet-width) {
+      padding: 52px 20px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 55px 30px;
+    }
   }
 
   &--bridge {
-    padding: 36px 2px 39px 17px;
+    padding: 36px 0 38px 10px;
+
+    @media (min-width: $tablet-width) {
+      padding: 52px 30px 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 85px 35px;
+    }
   }
 }
 
@@ -90,6 +155,10 @@
 
   @media (min-width: $tablet-width) {
     width: calc(100% / 3 * 2);
+
+    &--bridge {
+      flex-direction: row-reverse;
+    }
   }
 }
 

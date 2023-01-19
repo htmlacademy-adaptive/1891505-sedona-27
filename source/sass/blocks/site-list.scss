@@ -7,13 +7,36 @@
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+    padding-left: 49px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 91px;
+    padding-right: 69px;
   }
 }
 
 .site-list__item {
   @media (min-width: $tablet-width) {
+    margin-right: 75px;
+
     &:nth-child(2) {
-      margin-right: 155px;
+      margin-right: 206px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 53px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2) {
+      margin-right: 290px;
     }
   }
 }
@@ -28,8 +51,30 @@
   padding-bottom: 12px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     @include bold-font-black;
     box-shadow: none;
+    padding-top: 12px;
+
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
+    }
   }
 }

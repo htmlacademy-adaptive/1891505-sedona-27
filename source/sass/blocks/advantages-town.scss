@@ -17,34 +17,43 @@
   margin: 0;
   list-style-type: none;
   background-color: #ffffff;
-  background-position: 20px 40px;
+  background-position: 20px 25px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     width: calc(100% / 3);
     box-sizing: border-box;
-    background-position: 50% 20%;
+    background-position: 50% 22%;
     background-size: 30%;
-    padding: 158px 33px 60px;
+    padding: 151px 33px 60px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 170px 50px 67px;
-    background-size: 30%;
+    padding: 167px 50px 65px;
+    background-size: 20%;
+    background-position: 50% 25%;
   }
 
   &--rent {
-    background-image: url("../img/icons/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
   }
 
   &--food {
-    background-image: url("../img/icons/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
   }
 
   &--gift {
-    background-image: url("../img/icons/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     padding-bottom: 46px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 26%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 20% 23%;
+    }
   }
 }
 
@@ -54,7 +63,20 @@
   line-height: 26px;
   color: $black-font-color;
   margin: 0;
-  padding: 0 0 16px 0;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-bottom: 26px;
+
+    &--food {
+      padding-bottom: 24px;
+    }
+
+    &--gift {
+      padding-bottom: 21px;
+    }
+  }
 }
 
 .advantages-town__description {
@@ -64,4 +86,12 @@
   color: $gray-font-color;
   margin: 0;
   padding: 0;
+}
+
+.advantages-town__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
