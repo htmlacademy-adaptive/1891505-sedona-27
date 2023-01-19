@@ -1,13 +1,17 @@
 .page-footer {
-  padding: 27px 0 23px;
+  padding: 38px 0 23px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 0;
+    padding: 37px 71px 36px 63px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 37px 128px 36px 118px;
   }
 }
 
