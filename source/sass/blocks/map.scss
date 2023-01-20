@@ -3,6 +3,10 @@
   justify-content: center;
   overflow: hidden;
   padding-bottom: 17px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .map__wrapper {

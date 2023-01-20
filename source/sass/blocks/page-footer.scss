@@ -8,10 +8,18 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
+    &--main {
+      padding: 20px 73px 36px 61px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 37px 120px 36px;
+
+    &--main {
+      padding: 37px 133px 36px 122px;
+    }
   }
 }
 
