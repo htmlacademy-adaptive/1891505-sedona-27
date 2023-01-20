@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 88px 20px 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+  }
 }
 
 .video-clip__button {
@@ -24,8 +28,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 250px;
-    left: 400px;
+    top: 313px;
+    left: 393px;
   }
 }
 
