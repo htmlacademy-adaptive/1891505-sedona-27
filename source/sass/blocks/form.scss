@@ -40,7 +40,7 @@
       margin-bottom: 42px;
     }
 
-    &--emotions{
+    &--emotions {
       margin-bottom: 41px;
     }
   }
@@ -48,7 +48,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 56px;
 
-    &--impact{
+    &--impact {
       margin-bottom: 37px;
     }
 
@@ -56,7 +56,7 @@
       margin-bottom: 87px;
     }
 
-    &--emotions{
+    &--emotions {
       margin-bottom: 43px;
     }
   }
@@ -112,7 +112,7 @@
     }
 
 
-    &--user-contacts{
+    &--user-contacts {
       margin-right: 19px;
     }
 
@@ -138,12 +138,11 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &--user-name {
       margin-left: 58px;
     }
 
-    &--user-contacts{
+    &--user-contacts {
       margin-right: 30px;
     }
 
