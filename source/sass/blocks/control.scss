@@ -1,6 +1,7 @@
 .control {
-  margin: 0;
+  margin: 0 auto;
   list-style-type: none;
+  width: 280px;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -8,26 +9,40 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 648px;
+    box-sizing: border-box;
+
+    &--radio {
+      padding: 0 36px;
+      column-gap: 17px;
+    }
+
+    &--checkbox {
+      padding: 0 84px;
+      column-gap: 35px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
-  }
+    width: 960px;
 
-  &--checkbox {
-    @media (min-width: $tablet-width) {
-      padding: 0 84px;
+
+    &--radio {
+      padding: 0 0 36px 53px;
+      gap: 20px;
     }
 
-    @media (min-width: $desktop-width) {
+    &--checkbox {
       grid-template-columns: repeat(4, max-content);
-      padding: 0 44.5px;
-      gap: 64px;
+      padding: 13px 0 0 43px;
+      gap: 65px;
     }
   }
 }
+
 
 .control__label {
   @include bold-font-black;
@@ -54,7 +69,7 @@
   border-radius: 50%;
 }
 
-.control--radio .control__field:checked + .control__mark::before {
+.control--radio .control__field:checked+.control__mark::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -66,7 +81,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.control--checkbox .control__field:checked + .control__mark::before {
+.control--checkbox .control__field:checked+.control__mark::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -76,12 +91,12 @@
   background-image: url("../img/tick.svg");
 }
 
-.control__field:hover + .control__mark,
-.control__field:focus + .control__mark {
+.control__field:hover+.control__mark,
+.control__field:focus+.control__mark {
   background-color: #e5e5e5;
 }
 
-.control__field:active + .control__mark {
+.control__field:active+.control__mark {
   background-color: #d5d5d5;
 
   &::before {

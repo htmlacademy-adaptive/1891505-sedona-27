@@ -1,21 +1,30 @@
 .reviews-intro {
   text-align: center;
-  padding-top: 36px;
+  padding: 36px 5% 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 140px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 114px 356px 41px;
+  }
 }
 
 .reviews-intro__title {
   @include bold-font-black;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
-  padding-bottom: 23px;
+  margin-top: 0;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 25px;
+    margin-bottom: 32px;
   }
 }
 
@@ -24,13 +33,5 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  padding-bottom: 28px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 102px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 67px;
-  }
+  margin-bottom: 28px;
 }
