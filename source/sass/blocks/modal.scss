@@ -1,0 +1,169 @@
+.modal {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal--opened {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal--closed {
+  display: none;
+}
+
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  text-align: center;
+
+  &--failure {
+    padding: 43px 43px 38px;
+  }
+
+  &--info {
+    padding: 37px 39px 23px 37px;
+  }
+
+  &--button {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--failure {
+      width: 400px;
+      padding-top: 35px;
+      padding-bottom: 50px;
+    }
+
+    &--success {
+      width: 640px;
+    }
+
+    &--info {
+      padding-top: 52px;
+      padding-bottom: 25px;
+    }
+
+    &--button {
+      background-color: #f2f2f2;
+      padding: 45px 91px 44px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--failure {
+      padding-top: 53px;
+      padding-bottom: 50px;
+    }
+
+    &--info {
+      padding: 49px 99px 20px 97px;
+    }
+
+    &--button {
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.modal__title {
+  @include bold-font-black;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    &--failure {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 22px;
+    }
+
+    &--success {
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
+
+    &--success {
+      margin-bottom: 33px;
+    }
+  }
+}
+
+.modal__title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.modal__text {
+  @include normal-font-black;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    &--failure {
+      margin-bottom: 61px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--failure {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+
+.modal__button {
+  @include bold-font-white;
+  font-size: 16px;
+  line-height: 26px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &--failure {
+    padding: 16px 78px;
+    margin: 0 27px;
+  }
+
+  &--success {
+    padding: 16px 69px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--failure {
+      padding: 16px 118px;
+    }
+
+    &--success {
+      padding: 16px 126px;
+      font-size: 19px;
+    }
+  }
+}
