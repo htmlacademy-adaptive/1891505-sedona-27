@@ -9,6 +9,8 @@
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -47,7 +49,8 @@
       <section class="reviews">
         <header class="reviews__header reviews-intro">
           <h2 class="reviews-intro__title">Оставьте свой отзыв</h2>
-          <p class="reviews-intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
+          <p class="reviews-intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о
+            посещенных
             вами достопримечательностях</p>
         </header>
         <form class="reviews__form form" action="https://echo.htmlacademy.ru/" method="get">
@@ -73,12 +76,12 @@
             <fieldset class="form__fieldset form__fieldset--user-contacts">
               <h3 class="form__title form__title--user-contacts">Контактная информация:</h3>
               <label class="form__label form__label--user-phone" for="form-user-phone">
-                <span>Контактный телефон*:</span>
+                <span class="form__text">Контактный телефон*:</span>
                 <input class="form__field form__field--user-phone" type="tel" id="form-user-phone"
                   placeholder="Введите телефон">
               </label>
               <label class="form__label form__label--user-mail" for="form-user-mail">
-                <span>"Электронная почта"*:</span>
+                <span class="form__text">Электронная почта*:</span>
                 <input class="form__field form__field--user-mail" type="email" id="form-user-mail"
                   placeholder="Введите e-mail">
               </label>
@@ -112,7 +115,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--attraction">
-            <h3 class="form__title form__title--border">Посещенные достопримечательности:</h3>
+            <h3 class="form__title form__title--border">Посещенные <br> достопримечательности:</h3>
             <ul class="form__list control control--checkbox">
               <li class="control__item">
                 <label class="control__label">
@@ -148,13 +151,13 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--emotions">
-            <h3 class="form__title form__title--border">Опишите свои эмоции:</h3>
+            <h3 class="form__title form__title--border form__title--textarea">Опишите свои эмоции:</h3>
             <textarea class="form__field form__field--emotions" name="emotions" id="emotions-textarea" cols="30"
               rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="form__button-container">
             <button class="form__button button" type="submit">Отправить отзыв</button>
-            <span class="form__remark">*- Обязательные поля</span>
+            <span class="form__remark">*&mdash;Обязательные поля</span>
           </div>
         </form>
       </section>
@@ -199,6 +202,26 @@
         </a>
       </div>
     </footer>
+  </div>
+  <div class="modal modal--failure modal--opened modal--closed">
+    <div class="modal__wrapper modal__wrapper--failure">
+      <h2 class="modal__title modal__title--failure">Что-то пошло<br>&nbsp;не так!</h2>
+      <p class="modal__text modal__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</p>
+      <button class="modal__button  modal__button--failure button" type="button">Ок</button>
+    </div>
+  </div>
+  <div class="modal modal--success modal--opened modal--closed">
+    <div class="modal__wrapper modal__wrapper--success">
+      <div class="modal__wrapper modal__wrapper--info">
+        <h2 class="modal__title modal__title--success">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы
+          опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__wrapper modal__wrapper--button">
+        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+      </div>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>

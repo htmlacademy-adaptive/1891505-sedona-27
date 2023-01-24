@@ -7,36 +7,25 @@
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
-    padding-left: 49px;
-    padding-right: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 91px;
-    padding-right: 69px;
   }
 }
 
 .site-list__item {
   @media (min-width: $tablet-width) {
-    margin-right: 75px;
+    &:nth-child(1) {
+      grid-column: 1 / 2;
+    }
 
     &:nth-child(2) {
-      margin-right: 206px;
+      grid-column: 2 / 3;
     }
 
     &:nth-child(3) {
-      margin-right: 53px;
+      grid-column: 4 / 5;
     }
 
     &:nth-child(4) {
-      margin-right: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:nth-child(2) {
-      margin-right: 290px;
+      grid-column: 5 / 6;
     }
   }
 }

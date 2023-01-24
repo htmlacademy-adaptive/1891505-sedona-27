@@ -1,6 +1,7 @@
 .control {
-  margin: 0;
+  margin: 0 auto;
   list-style-type: none;
+  width: 280px;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -8,30 +9,44 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 648px;
+    box-sizing: border-box;
+
+    &--radio {
+      padding: 0 36px;
+      column-gap: 17px;
+    }
+
+    &--checkbox {
+      padding: 0 84px;
+      column-gap: 35px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
-  }
+    width: 960px;
 
-  &--checkbox {
-    @media (min-width: $tablet-width) {
-      padding: 0 84px;
+
+    &--radio {
+      padding: 0 0 36px 53px;
+      gap: 20px;
     }
 
-    @media (min-width: $desktop-width) {
+    &--checkbox {
       grid-template-columns: repeat(4, max-content);
-      padding: 0 44.5px;
-      gap: 64px;
+      padding: 13px 0 0 43px;
+      gap: 65px;
     }
   }
 }
 
+
 .control__label {
-  @include normal-font-black;
-  font-size: 14px;
+  @include bold-font-black;
+  font-size: 18px;
   line-height: 21px;
   position: relative;
   display: flex;
@@ -39,6 +54,7 @@
   height: 46px;
   padding-left: 62px;
   cursor: pointer;
+  text-transform: none;
 }
 
 .control__mark {
