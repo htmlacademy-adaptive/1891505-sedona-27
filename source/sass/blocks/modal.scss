@@ -47,7 +47,7 @@
   @media (min-width: $tablet-width) {
     &--failure {
       width: 400px;
-      padding-top: 35px;
+      padding-top: 50px;
       padding-bottom: 50px;
     }
 
@@ -127,7 +127,7 @@
 
   @media (min-width: $tablet-width) {
     &--failure {
-      margin-bottom: 61px;
+      margin-bottom: 44px;
     }
   }
 
@@ -141,11 +141,10 @@
 
 .modal__button {
   @include bold-font-white;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   border: none;
   text-transform: uppercase;
-  font-weight: 400;
 
   &--failure {
     padding: 16px 78px;
@@ -157,13 +156,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
+
     &--failure {
       padding: 16px 118px;
+      margin: 0 22px;
     }
 
     &--success {
       padding: 16px 126px;
-      font-size: 19px;
     }
   }
 }
