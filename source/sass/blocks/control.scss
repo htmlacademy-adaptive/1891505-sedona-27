@@ -103,3 +103,8 @@
     opacity: 0.3;
   }
 }
+
+.control__field:disabled + .control__mark {
+  background-color: #e8afaf;
+  opacity: 0.2;
+}

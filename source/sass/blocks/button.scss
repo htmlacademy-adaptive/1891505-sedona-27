@@ -1,5 +1,6 @@
 .button {
   @include bold-font-white;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   background-color: $blue-background-color;

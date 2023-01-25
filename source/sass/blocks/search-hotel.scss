@@ -1,5 +1,5 @@
 .search-hotel {
-  padding: 36px 18px 49px 18px;
+  padding: 44px 18px 49px 18px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -46,6 +46,10 @@
   @media (min-width: $tablet-width) {
     display: inline;
   }
+}
+
+.search-hotel__button--disabled {
+  background-color: #e5e5e5;
 }
 
 .search-hotel__button {
