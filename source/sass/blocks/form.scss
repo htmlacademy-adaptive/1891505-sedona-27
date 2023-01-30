@@ -161,6 +161,14 @@
   }
 }
 
+.form__title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
 .form__label {
   display: flex;
   flex-direction: column;
@@ -234,6 +242,11 @@
   box-sizing: border-box;
   width: 100%;
   padding: 17px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
 
   &:hover {
     background-color: #e5e5e5;
