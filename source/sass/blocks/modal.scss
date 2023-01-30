@@ -56,8 +56,7 @@
     }
 
     &--info {
-      padding-top: 52px;
-      padding-bottom: 25px;
+      padding: 52px 100px 25px;
     }
 
     &--button {
@@ -68,7 +67,7 @@
 
   @media (min-width: $desktop-width) {
     &--failure {
-      padding-top: 53px;
+      padding-top: 46px;
       padding-bottom: 50px;
     }
 
@@ -102,7 +101,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 19px;
+    margin-bottom: 26px;
 
     &--success {
       margin-bottom: 33px;

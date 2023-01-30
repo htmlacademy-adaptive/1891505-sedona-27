@@ -34,21 +34,21 @@
     @media (min-width: $tablet-width) {
       width: calc(100% / 3);
       box-sizing: border-box;
-      padding: 37px 20px 42px;
+      padding: 42px 20px 42px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 48px 35px 42px;
+      padding: 53px 35px 42px;
     }
   }
 
   &--down {
     @media (min-width: $tablet-width) {
-      padding: 49px 20px 24px;
+      padding: 53px 20px 24px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 60px 35px 42px;
+      padding: 65px 35px 42px;
     }
   }
 
@@ -74,19 +74,16 @@
 
 .advantages__title {
   @include bold-font-advantages;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 0 10px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-  }
-}
+    max-width: 200px;
 
-.advantages__title br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
+    &--break {
+      max-width: 159px;
+    }
   }
 }
 
@@ -98,9 +95,18 @@
 
 .advantages__description {
   padding-top: 17px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 26px;
+
+    &--break {
+      max-width: 180px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: max-content;
   }
 }
 
@@ -138,7 +144,7 @@
     padding: 36px 0 38px;
 
     @media (min-width: $tablet-width) {
-      padding: 52px 30px 35px;
+      padding: 52px 30px 31px;
     }
 
     @media (min-width: $desktop-width) {
@@ -155,6 +161,7 @@
 
   @media (min-width: $tablet-width) {
     width: calc(100% / 3 * 2);
+    height: 256px;
 
     &--bridge {
       flex-direction: row-reverse;

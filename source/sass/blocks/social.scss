@@ -8,7 +8,11 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 0 9px;
+
+    &--inner {
+      margin: 0 0 0 -6px;
+    }
   }
 }
 
